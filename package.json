@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -28,10 +29,7 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
   },
-  "homepage": "https://swatiswapna.github.io/portfolio-website",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "homepage": "https://swatiswapna.github.io/portfolio-website"
 }
 
-}
+
